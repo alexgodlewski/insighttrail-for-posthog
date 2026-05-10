@@ -320,6 +320,8 @@ class APHA_Attribution {
 		$attribution = array();
 		$site_host   = $this->get_site_host();
 
+		$attribution['app_source'] = 'wordpress';
+
 		// First-touch.
 		$ft_fields = array( 'source', 'medium', 'campaign', 'content', 'term', 'landing_page', 'host', 'referrer' );
 		foreach ( $ft_fields as $field ) {
